@@ -1,6 +1,6 @@
 # Apex Detail Studio
 
-A student prototype for **International Financial Management**
+A prototype for a course **International Financial Management**
 
 **Group members:** Rao Daniyal Ahmed – [19946] and Abdullah bin Waris – [19939]
 

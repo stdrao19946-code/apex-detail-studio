@@ -1,8 +1,8 @@
 # Apex Detail Studio
 
-A student prototype for **Financial Management / International Financial Management** (BBA, Spring 2026, KASBIT). Instructor: Huma Abubakar.
+A student prototype for **International Financial Management**
 
-**Group members:** Rao Daniyal Ahmed – [ID] and Abdullah bin Waris – [ID]
+**Group members:** Rao Daniyal Ahmed – [19946] and Abdullah bin Waris – [19939]
 
 ## Business idea
 

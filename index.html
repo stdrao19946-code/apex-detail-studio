@@ -44,15 +44,18 @@ input,select,textarea{font:400 16px Barlow,Arial,sans-serif;padding:11px;border:
 #ok{display:none;background:#e5f5ec;border:1px solid #9bd3b7;padding:16px;border-radius:6px;margin-top:18px;max-width:760px}
 footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}footer b{color:#fff}
 @media(prefers-reduced-motion:reduce){.hero h1::after{animation:none}html{scroll-behavior:auto}}
+.tag{font:600 13px/1 Barlow,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8a5f00;margin-bottom:10px}.dark .tag{color:var(--amber)}
+.cols2{display:grid;grid-template-columns:1fr 1.5fr;gap:30px}@media(max-width:860px){.cols2{grid-template-columns:1fr}}.cols2 form{max-width:none}
+.card dl{margin:0;display:grid;gap:12px}.card dt{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}.card dd{margin:2px 0 0;font-weight:500}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>APEX <i>DETAIL</i> STUDIO</b><div><a href="#services">Services</a><a href="#startup">Startup costs</a><a href="#calculator">Profit calculator</a><a href="#order">Book a slot</a></div></div></nav>
+<nav><div class="wrap"><b>APEX <i>DETAIL</i> STUDIO</b><div><a href="#about">About</a><a href="#services">Services</a><a href="#startup">Startup costs</a><a href="#calculator">Calculator</a><a href="#contact">Contact &amp; order</a></div></div></nav>
 
 <header class="dark hero"><div class="wrap">
 <h1>Showroom finish for every car in Karachi.</h1>
 <p>Apex Detail Studio is a professional car detailing and ceramic coating workshop. We restore paint, protect it for years, and treat every car like it is our own.</p>
-<a class="btn" href="#order">Book a slot</a>
+<a class="btn" href="#contact">Book a slot</a>
 <div class="stats">
 <div><b id="s1"></b><span>Startup money needed</span></div>
 <div><b id="s2"></b><span>Expected monthly sales</span></div>
@@ -60,12 +63,23 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <div><b id="s4"></b><span>Break-even monthly sales</span></div>
 </div></div></header>
 
+<section id="about" style="background:#fff"><div class="wrap">
+<div class="tag">1 &middot; Business name and introduction</div>
+<h2>About Apex Detail Studio</h2><p class="sub">Apex Detail Studio is a car detailing and ceramic coating workshop in Karachi. We clean, polish and protect cars so the paint looks showroom-new and stays that way.</p>
+<div class="grid">
+<div class="card"><h3>What we offer</h3><p>Five services, from a quick wash to a 5-year ceramic coating.</p></div>
+<div class="card"><h3>Who we serve</h3><p>Car owners in Karachi who want their paint restored and protected.</p></div>
+<div class="card"><h3>How we earn</h3><p>We charge a fixed price per car. Our main costs are materials, rent and salaries, and what is left is our profit.</p></div>
+</div></div></section>
+
 <section id="services"><div class="wrap">
+<div class="tag">2 &middot; Products and services with prices</div>
 <h2>Services and prices</h2><p class="sub">Prices are per vehicle for a standard sedan, in Pakistani rupees (PKR). SUVs cost 20% more.</p>
 <div class="grid" id="cards"></div>
 </div></section>
 
 <section id="startup" style="background:#fff"><div class="wrap">
+<div class="tag">3 &middot; Estimated startup costs</div>
 <h2>Startup costs and sources of funds</h2><p class="sub">The one-time money needed before the first customer arrives, and where it comes from.</p>
 <div class="cols">
 <div><h3>What we need to spend</h3><table id="ut"></table></div>
@@ -74,6 +88,7 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 </div></div></section>
 
 <section id="calculator" class="dark"><div class="wrap">
+<div class="tag">4 &middot; Monthly sales, expenses and expected profit</div>
 <h2>Monthly sales, expenses and profit</h2><p class="sub">Change how many cars we expect per month. The sales, expenses and profit update straight away.</p>
 <div class="calc">
 <div id="sliders"></div>
@@ -81,15 +96,23 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <table id="rt"></table>
 <div style="margin-top:14px">Expected monthly profit</div><div class="big" id="profit"></div>
 <div id="extra" class="note"></div>
-<div class="fx"><h3>Dollar risk check</h3>
+<div class="fx"><h3>International finance: dollar risk check</h3>
 <p class="note" style="margin-top:6px">About 70% of our coatings and polishes are imported and priced in USD. If the rupee falls, our material costs rise.</p>
 <div class="row"><label><span>USD/PKR exchange rate (assumed base 276.50)</span><b id="fxv"></b></label><input type="range" id="fx" min="250" max="400" step="0.5" value="276.5" aria-label="USD to PKR exchange rate"></div>
 <div id="fxn" class="note"></div></div>
 </div></div>
 </div></section>
 
-<section id="order"><div class="wrap">
-<h2>Book a slot</h2><p class="sub">Sample order request. This prototype does not send data anywhere.</p>
+<section id="contact"><div class="wrap">
+<div class="tag">5 &middot; Contact details and sample order request</div>
+<h2>Contact us or book a slot</h2><p class="sub">Contact details are samples. The order form is a demonstration and does not send data anywhere.</p>
+<div class="cols2">
+<div class="card"><h3>Contact details</h3><dl>
+<div><dt>Address</dt><dd>Ittehad Commercial, DHA Phase 6, Karachi</dd></div>
+<div><dt>Phone / WhatsApp</dt><dd>0300-0000000</dd></div>
+<div><dt>Email</dt><dd>hello@apexdetail.example</dd></div>
+<div><dt>Opening hours</dt><dd>Monday to Saturday, 10:00 am to 7:00 pm</dd></div></dl></div>
+<div><h3 style="margin-bottom:14px">Order request</h3>
 <form id="of">
 <label class="f">Your name<input required id="nm" placeholder="e.g. Ahmed Khan"></label>
 <label class="f">Phone<input required id="ph" placeholder="03XX-XXXXXXX"></label>
@@ -98,10 +121,10 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <label class="f full">Preferred date<input type="date" required id="dt"></label>
 <div class="full"><button class="btn" type="submit">Send request</button></div>
 </form>
-<div id="ok" role="status"></div>
-</div></section>
+<div id="ok" role="status"></div></div>
+</div></div></section>
 
-<footer><div class="wrap"><b>Apex Detail Studio</b> | Partners: Rao Daniyal Ahmed and Abdullah bin Waris | Sample address: Ittehad Commercial, DHA Phase 6, Karachi | Phone: 0300-0000000 | Email: hello@apexdetail.example<br>Student prototype for International Financial Management, KASBIT, Spring 2026. All figures are estimates.</div></footer>
+<footer><div class="wrap"><b>Apex Detail Studio</b> | Student prototype for International Financial Management, KASBIT, Spring 2026. All figures are estimates.</div></footer>
 
 <script>
 const S=[
@@ -112,7 +135,7 @@ const S=[
 {n:"Ceramic Coating Pro (5 year)",p:95000,c:32000,j:1,d:"Multi-layer coating with a 5-year protection."}];
 const F=[["Workshop rent",80000],["Salaries (5 people)",223000],["Electricity, water, gas",35000],["Marketing",40000],["Maintenance, internet, other",30000]];
 const U=[["Equipment (polishers, washer, extractor, lights)",400000],["Workshop setup",200000],["Rent deposit (2 months)",160000],["Opening chemicals and coating stock",250000],["Branding, website, signage",70000],["Registration and legal",30000],["Launch marketing",90000],["Working capital reserve",300000]];
-const FD=[["Rao Daniyal Ahmed (50%)",750000,"#f2a900"],["Abdullah bin Waris (50%)",750000,"#22343f"]];
+const FD=[["Partner 1 (50%)",750000,"#f2a900"],["Partner 2 (50%)",750000,"#22343f"]];
 const BASE=276.5,IMP=.7,sum=a=>a.reduce((x,y)=>x+y[1],0),FIX=sum(F),STARTUP=sum(U);
 const $=id=>document.getElementById(id),R=n=>"PKR "+Math.round(n).toLocaleString("en-US");
 

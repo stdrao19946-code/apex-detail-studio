@@ -71,7 +71,7 @@ About 70% of our materials (coatings, polishes, chemicals) are imported and pric
 
 - `index.html`: the website prototype (open it in a browser, no installation needed). It contains the business introduction, services with prices, startup costs, the monthly sales/expenses/profit calculator, the dollar risk check and a sample order form.
 - `Apex_Detail_Studio_Plan.pptx` and `Apex_Detail_Studio_Plan.pdf`: the presentation (PowerPoint and PDF copy).
-- `README.md` and `Apex_Detail_Studio_README.pdf`: this file (Markdown and PDF copy).
+- `README.md`: this file (Markdown)
 
 ## AI tools used
 

@@ -2,7 +2,7 @@
 
 A prototype for a course **International Financial Management**
 
-**Group members: **Abdullah Bin Waris & Rao Daniyal Ahmed**
+Group members: **Abdullah Bin Waris & Rao Daniyal Ahmed**
 
 ## Business idea
 

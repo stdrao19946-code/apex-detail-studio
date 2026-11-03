@@ -56,12 +56,7 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <h1>Showroom finish for every car in Karachi.</h1>
 <p>Apex Detail Studio is a professional car detailing and ceramic coating workshop. We restore paint, protect it for years, and treat every car like it is our own.</p>
 <a class="btn" href="#contact">Book a slot</a>
-<div class="stats">
-<div><b id="s1"></b><span>Startup money needed</span></div>
-<div><b id="s2"></b><span>Expected monthly sales</span></div>
-<div><b id="s3"></b><span>Expected monthly profit</span></div>
-<div><b id="s4"></b><span>Break-even monthly sales</span></div>
-</div></div></header>
+</div></header>
 
 <section id="about" style="background:#fff"><div class="wrap">
 <div class="tag">1 &middot; Business name and introduction</div>
@@ -84,7 +79,7 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <div class="cols">
 <div><h3>What we need to spend</h3><table id="ut"></table></div>
 <div><h3>Funded equally by the two partners</h3><div class="bar" id="fbar"></div><table id="ft"></table>
-<p class="note" style="color:var(--mute)">No interest is paid on these funds. A bank loan could be added later if we expand.</p></div>
+<p class="note" style="color:var(--mute)">No interest is paid on these funds.</p></div>
 </div></div></section>
 
 <section id="calculator" class="dark"><div class="wrap">
@@ -111,7 +106,7 @@ footer{background:var(--petrol);color:#9fb1bc;padding:34px 0;font-size:14px}foot
 <div><dt>Address</dt><dd>Ittehad Commercial, DHA Phase 6, Karachi</dd></div>
 <div><dt>Phone / WhatsApp</dt><dd>0300-0000000</dd></div>
 <div><dt>Email</dt><dd>hello@apexdetail.example</dd></div>
-<div><dt>Opening hours</dt><dd>Monday to Saturday, 10:00 am to 7:00 pm</dd></div></dl></div>
+<div><dt>Opening hours</dt><dd>Monday to Saturday, 9:00 am to 9:00 pm</dd></div></dl></div>
 <div><h3 style="margin-bottom:14px">Order request</h3>
 <form id="of">
 <label class="f">Your name<input required id="nm" placeholder="e.g. Ahmed Khan"></label>
@@ -156,9 +151,7 @@ function calc(){
  $("extra").innerHTML=`Profit margin: ${sales?(pr/sales*100).toFixed(1):0}%<br>Break-even sales: ${R(be)} per month<br>Money paid back in about ${pr>0?(STARTUP/pr).toFixed(1)+" months (at this level, before ramp-up)":"never at this level"}`;
  $("fxv").textContent="PKR "+fx.toFixed(2);const d=mat-matBase;
  $("fxn").textContent=fx==BASE?"At the base rate there is no extra cost.":`Imported materials change our monthly cost by ${R(d)}. Our reply: buy stock in bulk, review prices every quarter and add local suppliers.`;
- $("s2").textContent=R(sales);$("s3").textContent=R(pr);$("s4").textContent=R(be);
 }
-$("s1").textContent=R(STARTUP);
 document.querySelectorAll("input[type=range]").forEach(e=>e.addEventListener("input",calc));calc();
 $("of").addEventListener("submit",e=>{e.preventDefault();const o=$("ok");o.style.display="block";o.textContent=`Thank you, ${$("nm").value}. We received your request for ${$("sv").value} on your ${$("car").value} for ${$("dt").value}. We will call you on ${$("ph").value} to confirm.`;e.target.reset()});
 </script>

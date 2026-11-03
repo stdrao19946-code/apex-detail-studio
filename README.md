@@ -1,12 +1,12 @@
 # Apex Detail Studio
 
-A prototype for a course **International Financial Management**
+A prototype for a course International Financial Management
 
-Group members: **Abdullah Bin Waris & Rao Daniyal Ahmed**
+**Group members:** Abdullah Bin Waris & Rao Daniyal Ahmed
 
 ## Business idea
 
-Apex Detail Studio is a car detailing and ceramic coating workshop in Karachi. We clean, polish and protect cars so the paint looks showroom-new and stays that way. Customers book a slot, bring the car to our workshop and collect it the same day (ceramic coating takes 2 to 3 days).
+Apex Detail Studio is a car detailing and ceramic coating workshop in Karachi. We clean, polish and protect cars so the paint looks showroom-new and stays that way. Customers book a slot, bring the car to our workshop and collect it the same day (ceramic coating takes 2 to 3 days). The studio is open Monday to Saturday, 9:00 am to 9:00 pm.
 
 ## Services and prices (PKR, standard sedan)
 
@@ -38,8 +38,8 @@ The two partners fund the startup equally and each owns 50% of the business.
 
 | Partner | PKR | Share |
 |---|---|---|
-| Rao Daniyal Ahmed | 750,000 | 50% |
-| Abdullah bin Waris | 750,000 | 50% |
+| Partner 1 | 750,000 | 50% |
+| Partner 2 | 750,000 | 50% |
 | **Total** | **1,500,000** | 100% |
 
 ## Monthly sales, expenses and profit (steady state)
@@ -69,9 +69,9 @@ About 70% of our materials (coatings, polishes, chemicals) are imported and pric
 
 ## Files
 
-- `index.html`: the website prototype (open it in a browser, no installation needed). It contains the business introduction, services with prices, startup costs, the monthly sales/expenses/profit calculator, the dollar risk check and a sample order form.
+- `index.html`: the website prototype (open it in a browser, no installation needed). It follows the five parts of the assignment: 1. business name and introduction, 2. services with prices, 3. startup costs and sources of funds, 4. monthly sales, expenses and profit calculator with a dollar risk check, 5. contact details and a sample order request form.
 - `Apex_Detail_Studio_Plan.pptx` and `Apex_Detail_Studio_Plan.pdf`: the presentation (PowerPoint and PDF copy).
-- `README.md`: this file (Markdown)
+- `README.md`: this file (Markdown).
 
 ## AI tools used
 
@@ -80,4 +80,4 @@ About 70% of our materials (coatings, polishes, chemicals) are imported and pric
 
 ## Live website
 
-After enabling GitHub Pages (Settings → Pages → Deploy from branch → main, root folder), the site is available at `https://stdrao19946-code.github.io/apex-detail-studio/`.
+After enabling GitHub Pages (Settings → Pages → Deploy from a branch, root folder), the site is available at https://stdrao19946-code.github.io/apex-detail-studio/.
